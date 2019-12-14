@@ -106,7 +106,6 @@ func (m *Masscan) Parse() ([]Host, error) {
 				if err != nil {
 					return nil, err
 				}
-				fmt.Println(host)
 				hosts = append(hosts, host)
 			}
 		default:
