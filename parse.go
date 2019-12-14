@@ -13,6 +13,7 @@ type State struct {
 }
 type Host struct {
 	XMLName xml.Name `xml:"host"`
+	Starttime string   `xml:"start,attr"`
 	Endtime string   `xml:"endtime,attr"`
 	Address Address  `xml:"address"`
 	Ports   Ports    `xml:"ports>port"`
